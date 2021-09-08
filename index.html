@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+            type="text/css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+
+        <!--Header-->
+        <header class="header">
+            <div class="wrapper">
+                <!--Header-top-->
+                <div class="header_top d-flex justify-content-between align-items-center">
+                    <div class="header_burger">
+                        <span></span>
+                    </div>
+                    <img src="img/Group 14.png" alt="" class="header_logo">
+
+                    <form class="header_form d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-link" type="submit"><i class="bi bi-search"></i></button>
+                    </form>
+
+                    <div class="header_icons d-flex">
+                        <a href="tel:+123456789"><i class="bi bi-telephone"></i></a>
+                        <a href="mailto:gsv@htmlbook.am" target="_blank"><i class="bi bi-person-circle"></i></a>
+                        <a href=""><i class="bi bi-cart"></i></a>
+                    </div>
+                </div>
+
+                <!--Header-bottom-->
+                <nav class="header_bottom">
+                    <span class="header_span">Frame 15</span>
+                    <ul class="header_list">
+                        <li class="header_link"><a href="">Všetky produkty</a></li>
+                        <li class="header_link"><a href="">pre podnikanie</a></li>
+                        <li class="header_link"><a href="">Životné udalosti</a></li>
+                        <li class="header_link"><a href="">tlač kníh</a></li>
+                        <li class="header_link"><a href="">kreatívne duše</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+
+
+        <!--Article-->
+        <article class="article d-flex text-align-center">
+            <div class="wrapper ">
+                <div class="article_container d-flex  align-items-center">
+                    <span>1</span>
+                    <p>Price And Parameters</p>
+                    <hr>
+                    <span>2</span>
+                    <p>Upload content</p>
+                    <hr>
+                    <span class="clicked">3</span>
+                    <p>Check Content</p>
+                    <hr>
+                    <span>4</span>
+                    <p>Upload Cover</p>
+                    <hr>
+                    <span>5</span>
+                    <p>Check Cover</p>
+                    <hr>
+                    <span>6</span>
+                    <p>Basket</p>
+                </div>
+            </div>
+        </article>
+
+
+
+        <!--Main-->
+        <main class="main">
+            <!--Main_right-->
+            <div class="main_left">
+                <a class="main_a" href=""><i class="bi bi-arrow-left"></i> Back to Upload Cover</a>
+                <p class="main_p1">PDF_name_hotovo_flatten_transparency_preflight_the_very_final_final_really.pdf
+                    <a href=""> Reupload PDF</a>
+                </p>
+                <h3 class="main_h3">Edit cover graphics</h3>
+                <p class="main_p2">Adjust the size of the cover</p>
+                <div class="main_box d-flex">
+                    <div class="main_slider d-flex">
+                        <input class="main_range" type="range" min="0" max="100" value="50">
+                    </div>
+                    <div class="main_value"></div>
+                </div>
+                <p class="main_p3">Use the slider to increase or decrease the size of your graphics. The preview on the
+                    right shows how
+                    the document will be printed and cropped.</p>
+                <h6 class="main_h6">Special instructions</h6>
+                <textarea class="form-control" id="exampleFormControlTextarea1"
+                    rows="3">If you have any special requirements to edit or process the document, write it here.</textarea>
+                <textarea class="form-control2" id="exampleFormControlTextarea1"
+                    rows="3">If you have any special requirements to edit or process the document, write it here.</textarea>
+                <div class="main_number d-flex justify-content-between align-items-center">
+                    <span>Number of copies</span>
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus">
+                        <input type="number" step="1" min="1" max="" name="quantity" value="100" title="Qty"
+                            class="input-text qty text" size="4" pattern="" inputmode="">
+                        <input type="button" value="+" class="plus">
+                    </div>
+                </div>
+                <div class="main_container d-flex justify-content-between">
+                    <div class="main_price_left ">
+                        <h3 class="main_price_left_h3">Total Price <span>(incl. VAT):</span></h3>
+                        <span class="main_price_left_span">Price per Pc.:</span>
+                    </div>
+
+                    <div class="main_price_right">
+                        <span class="main_price_right_span1">€ 146,50</span><br>
+                        <span class="main_price_right_span2">€ 1.465</span>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-success main_btn">Pridať do košíka <i
+                        class="bi bi-chevron-right"></i>
+                </button>
+            </div>
+
+
+            <!--Main_right-->
+            <div class="main_right">
+                <div class="main_right_top">
+                    Prev<div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>Next
+                </div>
+
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/swiper_img.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/swiper_img.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/swiper_img.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/swiper_img.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/swiper_img.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/swiper_img.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/swiper_img.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/swiper_img.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/swiper_img.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/swiper_img.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/swiper_img.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/swiper_img.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/swiper_img.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/swiper_img.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/swiper_img.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/swiper_img.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper_right_bottom">
+                    <i class="fa fa-info" aria-hidden="true"></i>
+                    <p>Colors in the document preview or on the monitor may be slightly distorted. However, the colors
+                        of the printed document will conform to ISO 12647-2: 2013 color standards ( Sample )</p>
+                </div>
+            </div>
+        </main>
+
+
+
+        <!--Footer-->
+        <footer class="footer">
+            <!--Footer_top-->
+            <div class="footer_top">
+                <h4 class="footer_top_title">Pomôžeme vám. Kontaktujte nás!</h4>
+                <div class="footer_top_container">
+                    <div class="footer_top_box">
+                        <span><i class="bi bi-telephone-fill"></i></span>
+                        <div class="footer_top_contact">
+                            <a href="tel:+02/32113070">02/32 11 30 70</a>
+                            <p>volajte Po-Pia 7-20</p>
+                        </div>
+                    </div>
+                    <div class="footer_top_box">
+                        <i class="bi bi-chat-left-text"></i>
+                        <div class="footer_top_contact">
+                            <a href="" target="blank">Priamo cez čet</a>
+                            <p>četujte Po-Pia 7-20</p>
+                        </div>
+                    </div>
+                    <div class="footer_top_box">
+                        <i class="bi bi-envelope-fill"></i>
+                        <div class="footer_top_contact">
+                            <a href="mailto:info@exprestlac.sk" target="blank">info@exprestlac.sk</a>
+                            <p>napíšte nám na náš e-mail</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Footer_slide-->
+            <div class="footer_slide container">
+                <h4 class="footer_slide_title">Dôveruje nám 114 421 zákazníkov - veľké či malé firmy,
+                    ale aj jednotlivci.
+                </h4>
+                <section class="customer-logos slider">
+                    <!-- 1 -->
+                    <div class="slide">
+                        <img src="img/kia.png" alt="">
+                    </div>
+                    <!-- 2 -->
+                    <div class="slide">
+                        <img src="img/office.png" alt="">
+                    </div>
+                    <!-- 3 -->
+                    <div class="slide">
+                        <img src="img/garmin.png" alt="">
+                    </div>
+                    <!-- 4 -->
+                    <div class="slide">
+                        <img src="img/orange.png" alt="">
+                    </div>
+                    <!-- 5 -->
+                    <div class="slide">
+                        <img src="img/w.png" alt="">
+                    </div>
+                    <!-- 6 -->
+                    <div class="slide">
+                        <img src="img/red.png" alt="">
+                    </div>
+                    <!-- 7 (other partner logos here,after 6th)-->
+                    <div class="slide">
+                        <img src="img/enel.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="img/abb.png" alt="">
+                    </div>
+                </section>
+            </div>
+
+
+            <!--Footer_form-->
+            <div class="footer_send">
+                <h4 class="footer_send_title">Chcete odoberať novinky a akcie?</h4>
+
+                <div class="footer_send_form">
+                    <form action="https://formsubmit.co/grigsgog@gmail.com" method="POST">
+                        <!-- info@exprestlac.sk -->
+                        <!-- <input type="hidden" name="subject" value="New email!"> -->
+                        <input type="email" name="email" class="form_input" placeholder="Váš email" required>
+                        <button type="submit" class="btn btn-secondary btn-hide">Odoberať</button>
+                        <br>
+                        <button type="submit" class="btn btn-secondary btn-show">Odoberať</button>
+                    </form>
+                    <p>Stlačením tlačítka “Odoberať” súhlasím so spracovaním osobných údajov<br> na marketingové účely a
+                        potvrdzujem, že mám viac ako 16 rokov.
+                    </p>
+                </div>
+            </div>
+
+
+            <!--Footer_bottom-->
+            <div class="footer_bottom">
+                <!--Footer_sitemap-->
+                <div class="footer_sitemap">
+                    <div>
+                        <ul class="footer_ul">O spoločnosti
+                            <li class="footer_li"><a href="">O nás</a></li>
+                            <li class="footer_li"><a href="">Kariéra</a></li>
+                            <li class="footer_li"><a href="">Sponzoring</a></li>
+                            <li class="footer_li"><a href="">Kontakt</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <ul class="footer_ul">Všetko o nákupe
+                            <li class="footer_li"><a href="">Ako to funguje</a></li>
+                            <li class="footer_li"><a href="">Výhody</a></li>
+                            <li class="footer_li"><a href="">Poradňa</a></li>
+                            <li class="footer_li"><a href="">Spôsoby platby</a></li>
+                            <li class="footer_li"><a href="">Spôsoby doručenia</a></li>
+                            <li class="footer_li"><a href="">Reklamácie</a></li>
+                            <li class="footer_li"><a href="">Obchodné podmienky</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <ul class="footer_ul">Stránka
+                            <li class="footer_li"><a href="">Blog</a></li>
+                            <li class="footer_li"><a href="">Mapa stránky</a></li>
+                            <li class="footer_li"><a href="">Všetky produkty</a></li>
+                            <li class="footer_li"><a href="">Autorské práva</a></li>
+                            <li class="footer_li"><a href="">Rakúsko</a></li>
+                            <li class="footer_li"><a href="">Česká republika</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <ul class="footer_ul">Bezpečný nákup
+                            Ochrana osobných<br>údajov
+                            <li class="footer_li"><img class="footer_sitemap_img" src="img/1.png" alt=""></li>
+                            <li class="footer_li"><img class="footer_sitemap_img" src="img/2.svg" alt=""></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <ul class="footer_ul">Garancia 150 €
+                            <li class="footer_li">
+                                V prípade nespokojnosti s
+                                kvalitou tlače Vám
+                                vrátime peniaze alebo
+                                obratom vyhotovíme upravené tlačoviny.
+                                Garancia platí na všetky
+                                druhy tlačovín do 150 €.
+                            </li>
+                            <li class="footer_li"><img class="footer_sitemap_img" src="img/3.svg" alt=""></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <ul class="footer_ul">Tlač + Doručenie
+                            <li class="footer_li">3h Expres Bratislava</li>
+                            <li class="footer_li">Doručenie do 3 hodín od objednania.</span><br>
+                            <li class="footer_li">24h Slovensko</li>
+                            <li class="footer_li">Doručenie do 24 hodín od objednania.</span><br>
+                            <li class="footer_li"><img class="footer_sitemap_img mb-2" src="img/4.png" alt=""></li>
+                            <li class="footer_li">Doprava zadarmo</li><br>
+                            <li class="footer_li">Pri objednávke nad 50 €
+                                získate štandardnú
+                                dopravu kuriérom
+                                zadarmo.
+                            </li class="footer_li">
+                        </ul>
+                    </div>
+                </div>
+
+                <!--Footer_pay-->
+                <div class="footer_pay">
+                    <h5>Spôsoby platby</h5>
+                    <div class="footer_payments">
+                        <div class="footer_payments_a">
+                            <a href="">PayPal</a>
+                            <a href="">Kartou</a>
+                            <a href="">Platobnou bránou</a>
+                            <a href="">Prevodom</a>
+                            <a href="">Dobierkou</a>
+                            <a href="">Faktúrou</a>
+                            <a href="">Osobne kartou</a>
+                        </div>
+                        <br>
+                        <div class="footer_payments_img">
+                            <img src="img/paypal.png" alt="">
+                            <img src="img/visa.png" alt="">
+                            <img src="img/mastercard.png" alt="">
+                            <img src="img/tatra.png" alt="">
+                            <img src="img/poro.png" alt="">
+                            <img src="img/vub.png" alt="">
+                            <img src="img/postova.png" alt="">
+                            <img src="img/uni.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--Footer_links-->
+                <div class="footer_end">
+                    <p class="footer_end_p">
+                        Naše stránky pre zaistenie funkčnosti, zlepšovanie našich služieb, analýzu návštevnosti a
+                        marketingové účely využívajú súbory cookies. Okrem nás je príjemcom údajov cookies Google
+                        Ireland Ltd. pre potreby webovej analytiky. Viac informácii nájdete v sekcii
+                        <a class="footer_end_p_a">Ochrana osobných údajov.</a>
+                    </p>
+
+                    <div class="footer_end_links">
+                        <a href="https://www.facebook.com/" target="blank"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/" target="blank"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/grigor-safaryan-bb1b91208/" target="blank"><i
+                                class="bi bi-linkedin"></i></a>
+                        <a href="https://www.youtube.com/" target="blank"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </footer>
+
+
+
+
+
+
+
+
+        <!--JQuerry-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <!--JavaScript-->
+        <script src="js/script.js"></script>
+
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Main_right Slider -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                pagination: {
+                    el: ".swiper-pagination",
+                    type: "fraction",
+                },
+                loop: true,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        </script>
+
+        <!--Slick Carousel cdn-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
+    </body>
+
+</html>
